@@ -1,0 +1,12 @@
+.navbar_container{
+    background-color: $main;
+    padding: 10px;
+
+    p {
+        color:white;
+
+        &:hover {
+            color:black
+        }
+    }
+}
