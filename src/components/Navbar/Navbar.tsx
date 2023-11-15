@@ -1,14 +1,15 @@
-import React from "react";
+import React from 'react'
 
-export type NavbarProps = {};
+export type NavbarProps = {}
 
 const Navbar: React.FC<NavbarProps> = ({}) => {
+
   return (
-    <div className=" navbar_container">
+    <div className='navbar_container'>
       Navbar
       <p>texto prueba</p>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
