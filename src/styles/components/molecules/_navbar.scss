@@ -4,16 +4,40 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @media (min-width: 1050px) {
+        height: 64px;
+      }
 }
 
 .nav-brand{
     width: 66.66%;
     justify-content: flex-start;
     margin-left: 32px;
+    @media (min-width: 1050px) {
+        margin-left: 120px;
+      }
 }
 
-.nav-contact{
+.nav-contact-mobile{
     width: 33.33%;
     justify-content: center;
     margin-right: 32px;
+    @media (min-width: 1050px) {
+        display: none;;
+      }
+}
+
+.nav-contact-web{
+    width: 33.33%;
+    justify-content: end;
+    margin-right: 120px;
+    gap: 20px;
+    @media (max-width: 1050px) {
+        display: none;;
+      }
+}
+
+.nav-phone{
+    display: flex;
+    align-items: center;
 }
