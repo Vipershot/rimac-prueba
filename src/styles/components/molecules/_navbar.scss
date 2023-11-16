@@ -1,12 +1,19 @@
-.navbar_container{
-    background-color: $main;
-    padding: 10px;
+.navbar-container{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-    p {
-        color:white;
+.nav-brand{
+    width: 66.66%;
+    justify-content: flex-start;
+    margin-left: 32px;
+}
 
-        &:hover {
-            color:black
-        }
-    }
+.nav-contact{
+    width: 33.33%;
+    justify-content: center;
+    margin-right: 32px;
 }

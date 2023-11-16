@@ -1,13 +1,14 @@
 import {
   createBrowserRouter
 } from "react-router-dom";
+import { Home } from "./components/organism/Home";
   
   export const router = createBrowserRouter([
     {
       path: "/",
       element: (
          <div>
-          <h1>Home</h1>
+          <Home/>
         </div>
       ),
     },

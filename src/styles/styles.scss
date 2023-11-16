@@ -1,7 +1,9 @@
 // UI Settings
 @import './base/settings';
+@import './base/reset';
 
 // Component
-@import './components/navbar';
+@import './components/molecules/navbar';
+@import './components/atoms/textMain'
 
 //Screens
