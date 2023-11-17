@@ -1,11 +1,38 @@
 .text-sm{
     font-size: $text-sm;
 }
+.text-xs{
+    font-size: $text-xs;
+}
+
+.text-md{
+    font-size: $text-md;
+}
+
+.text-lg{
+    font-size: $text-lg;
+}
+
+.text-primary{
+    color: $color-primary;
+}
 
 .text-secondary{
-    color: $text-secondary;
+    color: $color-secondary;
+}
+
+.text-terteary{
+    color: $color-alert;
+}
+
+.text-gray{
+    color: $color-grey;
 }
 
 .text-light{
     font-weight: $text-light;
+}
+
+.text-bold{
+    font-weight: $text-bold;
 }

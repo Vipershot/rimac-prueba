@@ -1,4 +1,4 @@
-import Navbar from './components/Navbar/Navbar'
+
 import axios from "./axios";
 
 
@@ -13,7 +13,7 @@ axios.get('/users').then(response => {
 
   return (
     <>
-    <Navbar/>
+
     </>
   )
 }

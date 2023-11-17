@@ -1,10 +1,11 @@
-import React from 'react'
+import { FormHome } from '../molecules/FormHome'
 import { Navbar } from '../molecules/Navbar'
 
 export const Home = () => {
   return (
-    <div>
+    <>
       <Navbar />
-    </div>
+      <FormHome/>
+    </>
   )
 }

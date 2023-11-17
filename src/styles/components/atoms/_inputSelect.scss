@@ -1,0 +1,32 @@
+.select-container {
+  position: relative;
+  width: 97px;
+  height: 56px;
+  .input-select {
+    height: 100%;
+    width: 97px;
+    padding: 18px;
+    font-size: $text-md;
+    color: $color-primary;
+    border-radius: 6px 0 0 6px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+  i {
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 12px);
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-left: 2px solid $color-alert;
+    border-bottom: 2px solid $color-alert;
+    transform: rotate(-45deg);
+    transition: all 0.25s ease;
+  }
+}

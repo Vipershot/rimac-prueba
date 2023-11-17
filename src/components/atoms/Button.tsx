@@ -1,10 +1,7 @@
-import React from 'react';
+import { PropsButton } from "../../interface/button";
 
-export type ButtonProps = {
-}
-
-const Button: React.FC<ButtonProps>  = ({}) => {
-	return <div>Button</div>;
+const Button = ({onClick, text}:PropsButton) => {
+	return <button className='button-main' onClick={onClick}>{text}</button>;
 };
 
 export default Button;

@@ -1,0 +1,42 @@
+
+
+ .input-main {
+  height: 56px;
+  width: 100%;
+ 
+  &::placeholder {
+    color: $color-grey;
+    font-size: $text-md;
+  }
+ 
+  &[type='text'] {
+    padding: 18px; 
+    border-radius: 6px;
+    border: 1.2px solid $color-grey;
+  }
+ }
+ 
+ .input-select {
+  height: 56px;
+  width: 100%;
+ 
+  &::placeholder {
+    color: $color-grey;
+    font-size: $text-md;
+  }
+ 
+  &[type='number'] {
+    padding: 18px; 
+    border-radius: 0 6px 6px 0;
+    border: 1.2px solid $color-grey;
+  }
+ }
+ 
+ .input-check {
+  height: 20px;
+  width: 20px;
+ 
+  &[type='checkbox'] {
+    accent-color: $color-success;
+  }
+ }

@@ -1,0 +1,78 @@
+
+.formHome {
+    &__container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    &__hero {
+      height: 306px;
+      display: flex;
+      margin-left: 32px;
+    }
+  
+    &__info {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    &__new {
+      margin-bottom: 8px;
+    }
+  
+    &__main {
+      margin-bottom: 12px;
+      line-height: 32px;
+    }
+  
+    &__text {
+      line-height: 18px;
+    }
+  
+    &__brand {
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  
+    &__section {
+      margin-right: 32px;
+      margin-top: 20px;
+      flex-direction: column;
+      gap: 22px;
+    }
+  
+    &__select {
+      display: flex;
+    }
+  
+    &__input {
+      margin-bottom: 16px;
+  
+      &--last {
+        margin-bottom: 24px;
+      }
+    }
+  
+    &__check {
+      &-container {
+        display: flex;
+        margin-bottom: 32px;
+      }
+  
+      &-box {
+        width: 20px;
+      }
+  
+      &-label {
+        margin-left: 12px;
+      }
+    }
+
+    &__button-container{
+      margin-bottom: 54px;
+    }
+  }
+  

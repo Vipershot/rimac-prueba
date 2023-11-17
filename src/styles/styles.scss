@@ -3,7 +3,15 @@
 @import './base/reset';
 
 // Component
+
+// Atoms
+@import './components/atoms/textMain';
+@import './components/atoms/inputMain';
+@import './components//atoms/inputSelect';
+@import './components/atoms/buttonMain';
+
+//Molecules
 @import './components/molecules/navbar';
-@import './components/atoms/textMain'
+@import './components/molecules/formHome'; 
 
 //Screens

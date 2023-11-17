@@ -1,6 +1,6 @@
-export type ISize = 'xs' | 'sm' | 'md';
+export type ISize = 'xs' | 'sm' | 'md' | 'lg';
 export type ICategory = 'h1' | 'p';
-export type IColor = 'primary' | 'secondary' | 'terteary';
+export type IColor = 'primary' | 'secondary' | 'terteary' | 'gray';
 export type IWeight = 'light' | 'bold' ;
 
 export interface PropsTextMain {
