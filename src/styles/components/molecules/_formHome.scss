@@ -3,12 +3,38 @@
     &__container {
       display: flex;
       flex-direction: column;
+      height: auto;
+      @media (min-width: 1050px) {
+        flex-direction: row;
+        height: 100vh;
+      }
     }
   
-    &__hero {
+    &__hero-mobile {
       height: 306px;
       display: flex;
       margin-left: 32px;
+      @media (min-width: 1050px) {
+        display: none;
+      }
+    }
+
+    &__hero-web {
+      display: block;
+      width: 37%;
+      background-image: url('../src/assets/Rimac-Hero-Web.svg');
+      background-size: cover;
+      @media (max-width: 1550px) {
+        background-image: url('../src/assets/Rimac-Hero-Web-2.svg');;
+        width: 40%;
+      }
+      @media (max-width: 1050px) {
+        display: none;
+      }
+    }
+
+    &__image{
+      width: 84.5%;
     }
   
     &__info {
@@ -36,16 +62,33 @@
       display: flex;
       justify-content: flex-end;
     }
+
+    &__section-web {
+      width: 60%;
+      display: flex;
+      padding-left: 10%;
+      align-items: center;
+      @media (max-width: 1050px) {
+        display: block;
+        width: auto;
+        padding-left: 0;
+      }
+    }
   
     &__section {
+      margin-left: 32px;
       margin-right: 32px;
       margin-top: 20px;
       flex-direction: column;
-      gap: 22px;
+      width: auto;
+      @media (min-width: 1050px) {
+        width: 48%;
+      }
     }
   
     &__select {
       display: flex;
+      margin-top: 22px;
     }
   
     &__input {
@@ -60,6 +103,10 @@
       &-container {
         display: flex;
         margin-bottom: 32px;
+        width: auto;
+        @media (min-width: 1050px) {
+          width: 90%;
+        }
       }
   
       &-box {
@@ -73,6 +120,9 @@
 
     &__button-container{
       margin-bottom: 54px;
+      @media (min-width: 1050px) {
+        width: 60%;
+      }
     }
   }
   
