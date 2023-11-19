@@ -21,17 +21,37 @@
 
     &__hero-web {
       display: block;
-      width: 37%;
+      width: 35%;
       background-image: url('../src/assets/Rimac-Hero-Web.svg');
       background-size: cover;
-      @media (max-width: 1550px) {
-        background-image: url('../src/assets/Rimac-Hero-Web-2.svg');;
-        width: 40%;
+      @media (max-width: 1450px) {
+        width: 540px;
       }
       @media (max-width: 1050px) {
         display: none;
       }
     }
+
+    &__info-web{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 200px;
+      width: 280px;
+  }
+
+  &__card{
+    margin-top: 180px;
+  }
+
+  &__web-text{
+    font-weight: $text-light;
+    color: $color-primary;
+    font-size: $text-xl;
+    margin-bottom: 16px;
+    margin-top: 8px;
+  }
 
     &__image{
       width: 84.5%;
@@ -68,6 +88,9 @@
       display: flex;
       padding-left: 10%;
       align-items: center;
+      @media (max-width: 1450px) {
+        padding-left: 6%;
+      }
       @media (max-width: 1050px) {
         display: block;
         width: auto;

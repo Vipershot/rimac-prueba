@@ -1,30 +1,31 @@
-import { useEffect, useState } from 'react'
+import useWindowWidth from '../../hooks/useWindowWidth'
 import Button from '../atoms/Button'
 import { InputMain } from '../atoms/InputMain'
 import { InputSelect } from '../atoms/InputSelect'
 import { TextMain } from '../atoms/TextMain'
 
 export const FormHome = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth)
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    // Cleanup function
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
+  const windowWidth = useWindowWidth()
 
   return (
     <div className='formHome__container'>
       {windowWidth >= 1050 ? (
         <div className='formHome__hero-web'>
-          <div className='formHome__hero-brand' />
+          <div className='formHome__info-web'>
+            <div className='formHome__card'>
+              <TextMain category='p' size='sm' color='primary' weight='bold' text='¡NUEVO!' />
+              <h1 className='formHome__web-text'>
+                Seguro <span style={{ color: 'red' }}>Vehicular Tracking</span>
+              </h1>
+              <TextMain
+                category='p'
+                size='sm'
+                color='gray'
+                weight='light'
+                text='Cuentanos donde le haras seguimiento a tu seguro'
+              />
+            </div>
+          </div>
         </div>
       ) : (
         <div className='formHome__hero-mobile'>
