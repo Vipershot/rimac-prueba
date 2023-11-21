@@ -1,0 +1,24 @@
+.switch {
+    width: 51px;
+    height: 32px;
+    border-radius: 30px;
+    background-color: $color-light-grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+    &.switch-on {
+      background-color: $color-success;
+      justify-content: flex-end;
+    }
+
+   }
+       .ball{
+        height: 28px;
+        width: 28px;
+        background-color: white;
+        border-radius: 50px;
+    }

@@ -9,7 +9,7 @@ export const FormHome = () => {
 
   return (
     <div className='formHome__container'>
-      {windowWidth >= 1050 ? (
+      {windowWidth > 1050 ? (
         <div className='formHome__hero-web'>
           <div className='formHome__info-web'>
             <div className='formHome__card'>
@@ -20,7 +20,7 @@ export const FormHome = () => {
               <TextMain
                 category='p'
                 size='sm'
-                color='gray'
+                color='grey'
                 weight='light'
                 text='Cuentanos donde le haras seguimiento a tu seguro'
               />
@@ -46,7 +46,7 @@ export const FormHome = () => {
             <div className='formHome__text'>
               <TextMain
                 category='p'
-                color='gray'
+                color='grey'
                 size='sm'
                 weight='light'
                 text='Cuentanos donde le haras seguimiento a tu seguro'

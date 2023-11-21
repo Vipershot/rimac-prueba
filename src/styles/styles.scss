@@ -7,11 +7,25 @@
 // Atoms
 @import './components/atoms/textMain';
 @import './components/atoms/inputMain';
-@import './components//atoms/inputSelect';
+@import './components/atoms/inputSelect';
 @import './components/atoms/buttonMain';
+@import './components/atoms/buttonIcon';
+@import './components/atoms/mountInput';
+@import './components/atoms/tabs';
+@import './components/atoms/switchButton';
+@import './components/atoms/buttonAdd';
 
 //Molecules
 @import './components/molecules/navbar';
-@import './components/molecules/formHome'; 
+@import './components/molecules/formHome';
+@import './components/molecules/progressBar';
+@import './components//molecules//cardMount';
+@import './components/molecules/featPlan';
+@import './components/molecules/cardFeat';
+@import './components/molecules/cardPrice';
+@import './components/molecules/autoCard';
+@import './components//molecules//autoHead';
+@import './components/molecules/autoPrice';
 
 //Screens
+@import './components/organism/plan';

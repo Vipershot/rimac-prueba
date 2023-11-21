@@ -1,0 +1,29 @@
+.icon-button {
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    &:focus-visible {
+        outline: none;
+      }
+    &__md{
+        height: 24px;
+        width: 24px;
+    }
+    &__lg{
+        height: 40px;
+        width: 40px;
+        font-size: 25px;
+    }
+    &__alert{
+        color: $color-red;
+        border-color: $color-red;
+    }
+    &__default{
+        color: $color-grey;
+        border: 1px solid $color-light-grey;
+    }
+    &__transparent{
+        border: none;
+    }
+   }
+   

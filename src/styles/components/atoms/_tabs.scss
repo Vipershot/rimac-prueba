@@ -1,0 +1,39 @@
+.tabs {
+  &__container {
+    width: 100%;
+  }
+  &__list {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+  &__list-item {
+    cursor: pointer;
+    width: 33.33%;
+    height: 56px;
+    border: none;
+    background: white;
+    border-bottom: 1px solid $color-light-grey;
+    font-size: $text-xs;
+    font-weight: $text-bold;
+    color: $color-grey;
+    &:focus-visible {
+      outline: none;
+    }
+
+    &:focus {
+      border: none;
+      border-bottom: 2px solid $color-alert;
+      color: $color-alert;
+    }
+  }
+  &__tab-content {
+    padding: 0;
+  }
+  &__content{
+    @media (min-width: 1050px) {
+      position: relative;
+    }
+  }
+}
+
+

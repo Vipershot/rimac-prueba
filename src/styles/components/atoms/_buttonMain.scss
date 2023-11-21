@@ -1,12 +1,48 @@
-.button-main{
+.button-main {
+  &__default {
     height: 56px;
     width: 100%;
     border-radius: 6px;
     background-color: $color-alert;
     border: none;
     color: whitesmoke;
-    font-size: 14px;
+    font-size: $text-sm;
     font-weight: $text-bold;
     line-height: 16px;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  &__transparent-open{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: $color-secondary;
+    font-size: $text-sm;
+    font-weight: $text-bold;
+    line-height: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  &__transparent-close{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: $color-light-grey;
+    font-size: $text-sm;
+    font-weight: $text-bold;
+    line-height: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  &__transparent-default{
+    width: auto;
+    border: none;
+    background-color: transparent;
+    color: $color-alert;
+    font-size: $text-sm;
+    font-weight: $text-bold;
+    line-height: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
 }

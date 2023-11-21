@@ -1,0 +1,62 @@
+.cardPrice {
+  &__container-web{
+    width: 49%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 90px;
+    padding-right: 152px;
+    @media (max-width: 1450px) {
+      padding-right: 110px;
+    }
+    @media (max-width: 1200px) {
+      padding-right: 80px;
+    }
+  }
+  &__component{
+    width: 224px;
+    display: flex; 
+    flex-direction: column;
+  }
+  &__price-container{
+    display: flex; 
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 20px;
+  }
+  &__feat-container{
+    margin-top: 24px;
+    display: flex; 
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__text-container{
+    display: flex; 
+    flex-direction: column;
+    gap: 8px;
+  }
+  &__feat-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+  &__button-container{
+    margin-top: 32px;
+  }
+  &__container {
+    margin-top: 106px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $color-light-grey;
+    box-shadow: 0px -10px 20px 8px rgba(163, 171, 204, 0.1215686275);
+  }
+  &__text {
+    margin-left: 32px;
+  }
+  &__button {
+    width: 160px;
+    margin-right: 32px;
+  }
+}

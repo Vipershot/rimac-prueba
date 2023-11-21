@@ -1,25 +1,24 @@
-import {
-  createBrowserRouter
-} from "react-router-dom";
-import { Home } from "./components/organism/Home";
-  
-  export const router = createBrowserRouter([
-    {
-      path: "/",
-      element: (
-         <div>
-          <Home/>
-        </div>
-      ),
-    },
-    {
-      path: "/arma-tu-plan",
-      element: <div>Arma tu plan</div>,
-    },
-    {
-      path: "/gracias",
-      element: <div>Gracias</div>,
-    },
-  ]);
-  
+import { createBrowserRouter } from 'react-router-dom'
+import { Home, Plan } from './components/organism/index'
+import { Layout } from './components/layout'
 
+export const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: '/arma-tu-plan',
+        element: <Plan/>,
+      },
+      {
+        path: '/gracias',
+        element: <div>Gracias</div>,
+      },
+    ],
+  },
+])

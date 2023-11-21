@@ -1,0 +1,7 @@
+.plan-container{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 1050px) {
+        flex-direction: row;
+      }
+}

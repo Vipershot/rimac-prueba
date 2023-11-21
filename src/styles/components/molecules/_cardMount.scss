@@ -1,0 +1,33 @@
+.cardMount {
+  &__container-web{
+    padding-top: 90px;
+    padding-left: 93px;
+  }
+  &__auto-card{
+    margin-top: 34px;
+  }
+  &__mount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 43px;
+  }
+  &__container {
+    display: flex;
+  }
+  &__mobile {
+    width: 100%;
+  }
+  &__info{
+    background-color: $color-neutral;
+    height: 340px;
+    padding: 40px 32px 0
+  }
+  &__mount-info{
+    padding: 42px 32px 0px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

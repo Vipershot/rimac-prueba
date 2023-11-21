@@ -1,0 +1,10 @@
+.mount-input {
+  &__container {
+    display: flex;
+    border: 1px solid $color-light-grey;
+    height: 56px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
