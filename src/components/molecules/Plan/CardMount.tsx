@@ -5,15 +5,15 @@ import { AutoHead } from './AutoHead'
 import { AutoPrice } from './AutoPrice'
 import { FeatPlan } from './FeatPlan'
 
-export const CardMount = () => {
+export const CardMount = ({plate, cart, name}:any) => {
   const windowWidth = useWindowWidth()
   return (
     <>
       {windowWidth > 1050 ? (
         <div className='cardMount__container-web'>
-          <AutoHead />
+          <AutoHead user={`${name}!`} />
           <div className='cardMount__auto-card'>
-            <AutoCard />
+            <AutoCard plate={plate} cart={cart}/>
           </div>
           <div className='cardMount__mount'>
             <AutoPrice />

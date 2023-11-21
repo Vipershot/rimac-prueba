@@ -39,6 +39,15 @@
       width: 320px;
     }
   }
+  &__dropdown{
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  &__ .dropdown-open {
+    opacity: 1;
+    transform: translateY(0);
+   }
   &__button{
     width: 100%;
     @media (min-width: 1050px) {
@@ -60,3 +69,10 @@
     border-top: 1px solid $color-light-grey;
   }
 }
+
+
+ .dropdown.open {
+  opacity: 1;
+  transform: translateY(0);
+ }
+ 

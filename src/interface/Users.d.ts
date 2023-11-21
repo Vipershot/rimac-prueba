@@ -27,3 +27,8 @@ export interface RootObject {
     catchPhrase: string;
     name:        string;
    }
+
+   export interface Data {
+    licensePlate?: string;
+    name?: string
+   }

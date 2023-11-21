@@ -1,16 +1,16 @@
-import { useState } from 'react';
 
-const SwitchButton = () => {
- const [isToggled, setToggle] = useState(false);
+interface SwitchProps {
+  disabled?: boolean
+  type?: string
+  onClick?:() => void
+}
 
- const handleToggle = () => {
-   setToggle(!isToggled);
- };
+const SwitchButton = ({disabled, type, onClick}:SwitchProps) => {
 
  return (
-   <div className={`switch ${isToggled ? 'switch-on' : 'switch-off'}`} onClick={handleToggle}>
+   <button disabled={disabled} className={`switch switch-${type}`} onClick={onClick}>
      <span className="switch-label"><div className='ball'></div></span>
-   </div>
+   </button>
  );
 };
 

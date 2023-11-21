@@ -7,6 +7,7 @@ export interface PropsInput {
     type: IType,
     placeHolder?: string,
     name?: string,
-    value?: string,
+    value?: string | any,
     id?: string
+    onChange?: any
 }

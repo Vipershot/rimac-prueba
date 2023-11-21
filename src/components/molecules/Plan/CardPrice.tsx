@@ -2,9 +2,13 @@ import useWindowWidth from '../../../hooks/useWindowWidth'
 import Button from '../../atoms/Button'
 import Check from '../../../assets/Check.svg'
 import { TextMain } from '../../atoms/TextMain'
+import { UserContext } from '../../../context/userContext'
+import { useContext } from 'react'
 
-export const CardPrice = ({price='35'}:any) => {
+export const CardPrice = () => {
   const windowWidth = useWindowWidth()
+  
+  const {price} = useContext(UserContext)
   return (
     <>
       {windowWidth > 1050 ? (

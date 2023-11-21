@@ -9,6 +9,17 @@
     cursor: pointer;
     width: 108px;
 }
+.button-disabled{
+    background: transparent;
+    border: none;
+    font-size: $text-sm;
+    color: $color-grey;
+    font-weight: $text-bold;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 108px;
+}
 .icon{
     height: 24px;
     width: 24px;

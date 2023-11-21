@@ -1,18 +1,27 @@
 import { Button, ButtonAdd, SwitchButton, TextMain } from '../../atoms/index'
 import { useWindowWidth, useToggle } from '../../../hooks/index'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { UserContext } from '../../../context/userContext'
 
 interface CardFeatProps {
   srcSVG?: string
   title?: string | any
   information?: string | any
+  priceFeat: number
+  validate?: boolean
 }
 
-export const CardFeat = ({ srcSVG, title, information }: CardFeatProps) => {
+export const CardFeat = ({ srcSVG, title, information, priceFeat, validate }: CardFeatProps) => {
+  const { price, setPrice, priceMax } = useContext(UserContext)
   const [isToggled, handleToggle] = useToggle()
   const windowWidth = useWindowWidth()
   const [agree, setAgree] = useState(true)
   const handleAgree = () => {
+    if (agree == true) {
+      setPrice(price + priceFeat)
+    } else {
+      setPrice(price - priceFeat)
+    }
     setAgree(!agree)
   }
 
@@ -32,13 +41,14 @@ export const CardFeat = ({ srcSVG, title, information }: CardFeatProps) => {
                 text={isToggled === true ? '▼' : '▲'}
               />
             ) : (
-              <SwitchButton />
+              <SwitchButton disabled={validate && priceMax >= 16000} type={agree === false ? 'on' : 'off'} onClick={handleAgree}/>
             )}
           </div>
         </div>
         {windowWidth > 1050 ? (
           <div className='cardFeat__add-container'>
             <ButtonAdd
+              disabled={validate && priceMax >= 16000}
               onClick={handleAgree}
               icon={agree === true ? '+' : '-'}
               text={agree === true ? 'AGREGAR' : 'QUITAR'}
@@ -48,7 +58,7 @@ export const CardFeat = ({ srcSVG, title, information }: CardFeatProps) => {
           <></>
         )}
         {isToggled === false ? (
-          <div className='cardFeat__text'>
+          <div className={`cardFeat__text ${isToggled === false ? "cardFeat__dropdown-open" : "cardFeat__dropdown"}`}>
             <TextMain category='p' color='grey' size='sm' weight='light' text={information} />
           </div>
         ) : (

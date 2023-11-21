@@ -4,17 +4,21 @@ import Cart3 from '../assets/Cart3.svg'
 
 export const options = [
   {
+    priceFeat: 15,
+    validate: true,
     title: 'Llanta robada',
     img: Wheel,
     description: `He salido de casa a las cuatro menos cinco para ir a la academia de ingles de mi pueblo (Sant Cugat, al lado de Barcelona) con mi bici, na llego a la academia que está en el centro del pueblo en una plaza medio-grande y dejo donde siempre la bici atada con una pitón a un sitio de esos de poner las bicis
         y mucho más`,
   },
   {
+    priceFeat: 20,
     title: 'Choque y/o pasarte la luz roja agregar',
     img: Choque,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget dolor morbi non arcu risus quis varius. Ut faucibus pulvinar elementum integer enim neque. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Id faucibus nisl tincidunt eget. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Diam phasellus vestibulum lorem sed risus ultricies.`,
   },
   {
+    priceFeat: 50,
     title: 'Atropello en la vía Evitamiento ',
     img: Cart3,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget dolor morbi non arcu risus quis varius. Ut faucibus pulvinar elementum integer enim neque. Habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat. Id faucibus nisl tincidunt eget. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Diam phasellus vestibulum lorem sed risus ultricies.s`,

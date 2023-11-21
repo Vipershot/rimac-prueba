@@ -1,20 +1,20 @@
-import { useState } from 'react';
+import { useContext } from 'react'
+import { UserContext } from '../context/userContext'
 
 interface UseCounterProps {
-    initialValue: number;
-    min: number;
-    max: number;
-   }
-   
+  initialValue: number
+  min: number
+  max: number
+}
 
-const useMount = ({ initialValue, min, max }: UseCounterProps) => {
- const [count, setCount] = useState(initialValue);
+const useMount = ({ min, max }: UseCounterProps) => {
+  const { setPriceMax } = useContext(UserContext)
 
- const increment = () => setCount(prevCount => prevCount < max ? prevCount + 100 : prevCount);
- const decrement = () => setCount(prevCount => prevCount > min ? prevCount - 100 : prevCount);
 
- return { count, increment, decrement };
-};
+  const increment = () => setPriceMax((prevCount) => (prevCount < max ? prevCount + 100 : prevCount))
+  const decrement = () => setPriceMax((prevCount) => (prevCount > min ? prevCount - 100 : prevCount))
 
-export default useMount;
+  return {  increment, decrement }
+}
 
+export default useMount

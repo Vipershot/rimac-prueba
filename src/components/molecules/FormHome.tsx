@@ -1,3 +1,4 @@
+import useForm from '../../hooks/useForm'
 import useWindowWidth from '../../hooks/useWindowWidth'
 import Button from '../atoms/Button'
 import { InputMain } from '../atoms/InputMain'
@@ -6,10 +7,16 @@ import { TextMain } from '../atoms/TextMain'
 
 export const FormHome = () => {
   const windowWidth = useWindowWidth()
+  const { values, handleChange, handleSubmit, formRef } = useForm({
+    docNumber: '',
+    cellPhone: '',
+    licensePlate: '',
+    contractAccepted: false
+  });
 
   return (
     <div className='formHome__container'>
-      {windowWidth > 1050 ? (
+      {windowWidth >= 1050 ? (
         <div className='formHome__hero-web'>
           <div className='formHome__info-web'>
             <div className='formHome__card'>
@@ -67,20 +74,20 @@ export const FormHome = () => {
             weight='light'
             text='Déjanos tus datos'
           />
-          <form>
+          <form ref={formRef}  onSubmit={handleSubmit}>
             <div className='formHome__select formHome__input'>
               <InputSelect />
-              <InputMain style='select' placeHolder='Nro. de Doc.' type='number' />
+              <InputMain name='docNumber' style='select' placeHolder='Nro. de Doc.' type='number' value={values.docNumber} onChange={handleChange}/>
             </div>
             <div className='formHome__input'>
-              <InputMain style='main' placeHolder='Celular' type='text' />
+              <InputMain name='cellPhone' style='main' placeHolder='Celular' type='text'  value={values.cellPhone} onChange={handleChange} />
             </div>
             <div className='formHome__input--last'>
-              <InputMain style='main' placeHolder='Placa' type='text' />
+              <InputMain name='licensePlate' style='main' placeHolder='Placa' type='text' value={values.licensePlate}  onChange={handleChange}/>
             </div>
             <div className='formHome__check-container'>
               <div className='formHome__check-box'>
-                <InputMain style='check' id='contract' value='acepto' type='checkbox' />
+                <InputMain name='contractAccepted' style='check' id='contract' value={values.contractAccepted}  onChange={handleChange} type='checkbox' />
               </div>
               <label className='formHome__check-label' htmlFor='contract'>
                 <TextMain

@@ -1,11 +1,12 @@
 import { TextMain } from '../../atoms/TextMain'
 
+
 interface AutoCardProps {
   plate?:string,
   cart?:string
 }
 
-export const AutoCard = ({plate="C2U-114",cart="Wolkswagen 2019 Golf"}:AutoCardProps) => {
+export const AutoCard = ({plate,cart="Wolkswagen 2019 Golf"}:AutoCardProps) => {
   return (
     <>
       <div className='auto-card'>

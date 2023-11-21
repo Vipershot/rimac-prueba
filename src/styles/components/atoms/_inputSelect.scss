@@ -2,12 +2,14 @@
   position: relative;
   width: 97px;
   height: 56px;
+  background-color: transparent;
   .input-select {
     height: 100%;
     width: 97px;
     padding: 18px;
     font-size: $text-md;
     color: $color-primary;
+    background-color: transparent;
     border-radius: 6px 0 0 6px;
     appearance: none;
     -webkit-appearance: none;
