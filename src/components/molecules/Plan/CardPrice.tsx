@@ -4,9 +4,11 @@ import Check from '../../../assets/Check.svg'
 import { TextMain } from '../../atoms/TextMain'
 import { UserContext } from '../../../context/userContext'
 import { useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 export const CardPrice = () => {
   const windowWidth = useWindowWidth()
+  const navigate = useNavigate()
   
   const {price} = useContext(UserContext)
   return (
@@ -61,7 +63,7 @@ export const CardPrice = () => {
                 </div>
               </div>
               <div className='cardPrice__button-container'>
-                <Button style='default' text='Lo quiero' />
+                <Button onClick={() => navigate("/gracias")} style='default' text='Lo quiero' />
               </div>
             </div>
           </div>
@@ -74,7 +76,7 @@ export const CardPrice = () => {
               <TextMain category='p' color='primary' size='xs' weight='bold' text='MENSUAL' />
             </div>
             <div className='cardPrice__button'>
-              <Button style='default' text='Lo quiero' />
+              <Button onClick={() => navigate("/gracias")} style='default' text='Lo quiero' />
             </div>
           </div>
         </>

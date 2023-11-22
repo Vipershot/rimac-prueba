@@ -30,5 +30,6 @@ export interface RootObject {
 
    export interface Data {
     licensePlate?: string;
-    name?: string
+    name?: string;
+    email?: string;
    }

@@ -13,8 +13,8 @@ export const Plan = () => {
   }
   useEffect(() => {
     axios.get('/users').then((response) => {
-      const dataSelect:{name:string} = getRandomElement(response.data)
-      setUser({...user,name:dataSelect.name})
+      const dataSelect:{name:string,email:string} = getRandomElement(response.data)
+      setUser({...user,name:dataSelect.name,email:dataSelect.email})
       console.log(dataSelect)
     })
   }, [])

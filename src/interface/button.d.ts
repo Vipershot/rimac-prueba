@@ -6,4 +6,5 @@ export interface PropsButton {
     onClick?:(event: MouseEvent<HTMLButtonElement>) => void,
     text?: string | any
     style?: IStyle
+    disabled?: boolean
 }

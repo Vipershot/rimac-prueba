@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom'
-import { Home, Plan } from './components/organism/index'
+import { Home, Plan, Thanks } from './components/organism/index'
 import { Layout } from './components/layout'
 
 export const router = createBrowserRouter([
@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
       },
       {
         path: '/gracias',
-        element: <div>Gracias</div>,
+        element: <Thanks/>,
       },
     ],
   },

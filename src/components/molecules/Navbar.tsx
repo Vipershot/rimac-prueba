@@ -19,20 +19,24 @@ export const Navbar = () => {
             text='¿Tienes alguna duda?'
           />
           <div className='nav-phone'>
-            <img src='../src/assets/Telf.svg' alt='' />
-            <TextMain
-              size='sm'
-              category='p'
-              color='secondary'
-              weight='light'
-              text='(01) 411 6001'
-            />
+            <a className='nav-ref' href='#'>
+              <img src='../src/assets/Telf.svg' alt='' />
+              <TextMain
+                size='sm'
+                category='p'
+                color='secondary'
+                weight='light'
+                text='(01) 411 6001'
+              />
+            </a>
           </div>
         </div>
       ) : (
         <div className='navbar-container nav-contact-mobile'>
-          <img src='../src/assets/Telf.svg' alt='' />
-          <TextMain size='sm' category='p' color='secondary' weight='light' text='Llámanos' />
+          <a className='nav-ref' href='#'>
+            <img src='../src/assets/Telf.svg' alt='' />
+            <TextMain size='sm' category='p' color='secondary' weight='light' text='Llámanos' />
+          </a>
         </div>
       )}
     </div>

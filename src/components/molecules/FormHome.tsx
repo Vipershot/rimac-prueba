@@ -100,7 +100,7 @@ export const FormHome = () => {
               </label>
             </div>
             <div className='formHome__button-container'>
-              <Button text='COTÍZALO' />
+              <Button disabled={values.cellPhone === '' && values.docNumber === '' && values.licensePlate === '' && values.contractAccepted === false ? true : false } text='COTÍZALO' />
             </div>
           </form>
         </div>
