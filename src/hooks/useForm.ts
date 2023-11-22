@@ -14,7 +14,6 @@ const useForm = (initialValues: Values) => {
   const formRef = useRef<HTMLFormElement>(null)
   const navigate = useNavigate()
   const { setUser } = useContext(UserContext)
-  const [errors, setErrors] = useState({});
 
   const handleChange = (event: any) => {
     setValues({
